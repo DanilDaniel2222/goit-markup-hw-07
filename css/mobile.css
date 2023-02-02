@@ -41,7 +41,7 @@ body{
 }
 
 .container{
-    width: 1158px;
+    max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -83,10 +83,10 @@ body{
 
 .list-studio{
     list-style: none;
-    display: flex;
+    display: none;
+    /* display: flex; */
     margin-left: 77px;
 }
-
 .studio-title{
     position: relative;
     font-weight: 500;
@@ -124,7 +124,7 @@ body{
 
 .list-contacts{
     list-style: none;
-    display: flex;
+    display: none;
     margin-left: auto;
 
 }
@@ -149,40 +149,44 @@ body{
 }
 
 
+/* --------------------------Background Solutions ------------------------------ */
+
 .background{
     position: relative;
-    padding-top: 192px;
+    padding-top: 112px;
     padding-bottom: 192px;
     text-align: center;
     background-color: var(--black-color);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)), 
-        url('../images/people-office-low.jpg');
+        url('../images/background-solutions-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1440px;
+    object-fit: scale-down;
+    width: 428px;
+    height: 432px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .title-solutions {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: calc(60/56);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: calc(40/36);
     letter-spacing: 0.02em;
     color: var(--brand-white-color);
-    margin-bottom: 46.41px;
-    max-width: 1440px;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+    max-width: 428px;
     display: block;
     justify-content: center;
 }
 
-
 .button-order-service {
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
     letter-spacing: 0.04em;
@@ -190,6 +194,7 @@ body{
     cursor: pointer;
     background-color: var(--blue-color);
     padding: 16px 32px;
+    margin-bottom: 112px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid transparent;
@@ -203,8 +208,11 @@ body{
 }
 
 
+/* ----------------------------------------Skills------------------------------ */
+
 .section-skills{
     padding-top: 120px;
+    padding-bottom: 96px;
 }
 
 
@@ -222,14 +230,16 @@ body{
       margin: -1px;
 } 
 
-
 .skills-list{
     list-style: none;
+    display: block;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 0;
     padding-right: 0;
-    gap: 24px;
+    gap: 72px;
 }
 
 .skills-background-icon{
@@ -237,39 +247,42 @@ body{
     border-radius: 4px;
     height: 112px;
     margin-bottom: 8px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
 .skills-icon{
-    display: flex;
+    display: none;
     justify-content: center;
-}
-
-.skills{
-    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 
 .title-skills{
     font-weight: 700;
-    font-size: 20px;
-    line-height: calc(24/20);
+    font-size: 36px;
+    line-height: calc(40/36);
     letter-spacing: 0.02em;
     color: var(--black-color);
     margin-bottom: 8px;
+    text-transform: capitalize;
+    text-align: center;
+
 }
 .text-skills{
+    font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
     color: var(--brand-black-color);
 }
 
+/* -----------------------------------Doing------------------------------ */
+
 .section-doing{
     padding-top: 120px;
     padding-bottom: 120px;
+    display: none;
 }
 .title-doing {
     font-weight: 700;
@@ -292,6 +305,9 @@ body{
 }
 
 
+/* ----------------------------Our Team---------------------------------------- */
+
+
 .title-team {
     font-weight: 700;
     font-size: 36px;
@@ -304,8 +320,11 @@ body{
 }
 .studio-images-2{
     list-style: none;
+    display: block;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 72px;
 }
 
 .background-studio-people-1{
@@ -319,7 +338,7 @@ body{
 .image-person{
     background-color: var(--brand-white-color);
     display: block;
-    width: 100%;
+    width: 264px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -373,18 +392,13 @@ body{
 
 
 
-
-
-
-
-
-
-
+/* -----------------------------Customers----------------------------- */
 
 
 .customers-section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    display: flex;
 }
 
 .customers-title{
@@ -399,9 +413,13 @@ body{
 }
 .customers-list{
     list-style: none;
+    display: block;
     display: flex;
     justify-content: center;
-    gap: 24px;
+    align-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: calc(100% - 2 * 16px ) / 2;
 }
 
 
@@ -433,17 +451,18 @@ body{
 
 
 
-
+/* ---------------------------------Footer------------------------------------------------ */
 
 .background-footer{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .position{
-    display: flex;
+    display: block;
+    text-align: center;
 }
 .footer-social{
-    margin-left: 120px;
+    margin-top: 72px;
 }
 
 
@@ -457,7 +476,6 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--blue-color);
-
 }
 .footer-logo-studio-2 {
     font-family: 'Raleway';
@@ -477,9 +495,12 @@ body{
     color: var(--second-white-color);
     width: 264px;
     margin-top: 16px;
+    text-align: start;
+    margin-right: auto;
+    margin-left: auto;
 }
 .title-social-media{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
@@ -489,6 +510,7 @@ body{
 .footer-list-icons{
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 16px;
     margin-top: 16px;
 }
@@ -511,14 +533,15 @@ body{
     background-color: var(--black-color);
 }
 
+/* -------------------------------------Subscribe section in the footer--------------------------------------------- */
+
+
 .form-wraper{
-    margin-left: 80px;
+    margin-top: 72px;
 }
 
-.subscribe-section{
-    display: flex;
-    gap: 24px;
-}
+/* .subscribe-section{
+} */
 
 .subscribe-text{
     font-weight: 500;
@@ -527,10 +550,10 @@ body{
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
-
 }
+
 .footer-input-E-mail{
-    width: 264px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -544,15 +567,11 @@ body{
     letter-spacing: 0.02em;
     color: #E7E9FC;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
-
-
 .subscribe-button{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
+    margin-top: 16px;
     background: var(--blue-color);
     border-radius: 4px;
     font-style: normal;
@@ -562,8 +581,7 @@ body{
     color: #FFFFFF;
     border-color: transparent;
     width: 165px;
-    gap: 16px;
-    padding: 6px 24px;
+    padding: 8px 24px;
 }
 .subscribe-button:hover,
 .subscribe-button:focus{
@@ -579,6 +597,18 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------Portfolio-------------------------------------- */
 
 
 .section-buttons{
@@ -975,13 +1005,6 @@ body{
 .modal-button-send:focus{
     background: var(--dark-blue-color);
 }
-
-
-
-
-
-
-
 
 
 
