@@ -17,13 +17,12 @@ ul,ol{
 
 img{
     display: block;
-    max-width: 100%;
+    max-width: 428px;
     height: auto;
 }
 
-
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto' 'Raleway', sans-serif;
     color: var(--brand-black-color);
 }
 
@@ -40,13 +39,30 @@ body{
     --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.container-header{
+    margin: 0 auto;
+    width: 100vw;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 .container{
-    max-width: 428px;
+    margin: 0 auto;
+    width: 100vw;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
 }
+
+.container-footer{
+    margin: 0 auto;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*-------------------------------------------- Header -----------------------------------------------------*/
 
 .header{
     border-bottom: 1px solid #E7E9FC;
@@ -59,7 +75,7 @@ body{
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.header-logo{
+.header-web{
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 800;
@@ -70,7 +86,7 @@ body{
     color: var(--blue-color);
 }
 
-.header-logo-studio{
+.header-studio{
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -80,13 +96,14 @@ body{
     color: var(--black-color);
 }
 
+/*-------------------------------------------- List Studio -----------------------------------------------------*/
 
 .list-studio{
     list-style: none;
-    display: none;
-    /* display: flex; */
+    display: flex;
     margin-left: 77px;
 }
+
 .studio-title{
     position: relative;
     font-weight: 500;
@@ -121,10 +138,11 @@ body{
     margin-left: 40px;
 }
 
+/*-------------------------------------------- List Contacts -----------------------------------------------------*/
 
 .list-contacts{
     list-style: none;
-    display: none;
+    display: flex;
     margin-left: auto;
 
 }
@@ -148,45 +166,42 @@ body{
     margin-left: 40px;
 }
 
-
-/* --------------------------Background Solutions ------------------------------ */
+/*-------------------------------------------- Background Solutions -----------------------------------------------------*/
 
 .background{
     position: relative;
-    padding-top: 112px;
+    padding-top: 192px;
     padding-bottom: 192px;
     text-align: center;
     background-color: var(--black-color);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)), 
-        url('../images/background-solutions-mobile.jpg');
+        url('../images/people-office-low.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    object-fit: scale-down;
-    width: 428px;
-    height: 432px;
+    max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .title-solutions {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: calc(40/36);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(60/56);
     letter-spacing: 0.02em;
     color: var(--brand-white-color);
-    text-transform: capitalize;
-    margin-bottom: 72px;
-    max-width: 428px;
+    margin-bottom: 46.41px;
+    max-width: 1440px;
     display: block;
     justify-content: center;
 }
 
+
 .button-order-service {
     font-family: inherit;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: calc(19/16);
     letter-spacing: 0.04em;
@@ -194,7 +209,6 @@ body{
     cursor: pointer;
     background-color: var(--blue-color);
     padding: 16px 32px;
-    margin-bottom: 112px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid transparent;
@@ -207,17 +221,16 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/*-------------------------------------------- Skills -----------------------------------------------------*/
 
-/* ----------------------------------------Skills------------------------------ */
-
-.section-skills{
-    padding-top: 120px;
+.skills-section{
+    padding-top: 96px;
     padding-bottom: 96px;
 }
 
 
 
-.visually-hidden-skills {
+.skills-visually-hidden{
       position: absolute;
       white-space: nowrap;
       width: 1px;
@@ -230,61 +243,64 @@ body{
       margin: -1px;
 } 
 
+
 .skills-list{
-    list-style: none;
-    display: block;
     display: flex;
     flex-wrap: wrap;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-    gap: 72px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skills{
+    list-style: none;
+    width: 100%;
+}
+
+.skills-list li:not(:first-child){
+    margin-top: 72px;
 }
 
 .skills-background-icon{
-    background: #F4F4FD;
-    border-radius: 4px;
+    background-color: #F4F4FD;
+    display: none;
+    width: 264px;
     height: 112px;
     margin-bottom: 8px;
-    display: none;
-    justify-content: center;
-    align-items: center;
+    border-radius: 4px;
 }
 
 .skills-icon{
-    display: none;
-    justify-content: center;
+    width: 64px;
+    height: 64px;
 }
 
-
-.title-skills{
+.skills-title{
     font-weight: 700;
     font-size: 36px;
-    line-height: calc(40/36);
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--black-color);
     margin-bottom: 8px;
     text-transform: capitalize;
-    text-align: center;
-
 }
-.text-skills{
+.skills-text{
     font-weight: 500;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
     color: var(--brand-black-color);
+    text-align: start;
+    
 }
 
-/* -----------------------------------Doing------------------------------ */
+/*-------------------------------------------- Doing -----------------------------------------------------*/
 
-.section-doing{
-    padding-top: 120px;
+.doing-section{
     padding-bottom: 120px;
     display: none;
 }
-.title-doing {
+.doing-title {
     font-weight: 700;
     font-size: 36px;
     line-height: calc(40/36);
@@ -294,22 +310,33 @@ body{
     color: var(--black-color);
     margin-bottom: 72px;
 }
-.studio-images-1{
+.doing-images{
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-.image-doing:not(:last-child){
+.doing-image:not(:last-child){
     margin-right: 24px;
 }
 
+/*-------------------------------------------- Our Team -----------------------------------------------------*/
 
-/* ----------------------------Our Team---------------------------------------- */
+.team-cards{
+    background-color: var(--first-white-color);
+    padding-top: 96px;
+}
 
+.team-card{
+    border-radius: 4px;
+    overflow: hidden;
+    align-items: center;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
 
-.title-team {
-    font-weight: 700;
+.team-title {
+    font-weight: 600;
     font-size: 36px;
     line-height: calc(40/36);
     text-align: center;
@@ -318,39 +345,44 @@ body{
     color: var(--black-color);
     margin-bottom: 72px;
 }
-.studio-images-2{
+.team-list{
     list-style: none;
-    display: block;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 128px;
+    margin: 0;
     justify-content: center;
-    gap: 72px;
 }
 
-.background-studio-people-1{
-    background-color: var(--first-white-color);
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-.background-studio-people-2{
-    background-color: var(--brand-white-color);
-}
-.image-person{
+.team-card-image{
     background-color: var(--brand-white-color);
     display: block;
-    width: 264px;
+    width: 100%;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.image-person:not(:last-child){
-    margin-right: 24px;
+
+.team-card-content{
+    padding: 32px 16px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--brand-white-color);
 }
 
-.name-text-person{
-    padding-top: 32px;
-    padding-bottom: 32px;
+.team-list > .team-card-person{
+    flex-basis: 264px;
+    margin-left: 83px;
+    margin-right: 83px;
+    margin-bottom: 72px;
 }
-.name-person {
+.team-card-person:last-child{
+    margin-bottom: 0;
+}
+
+.team-name-person {
     font-weight: 600;
     font-size: 20px;
     line-height: calc(24/20);
@@ -358,7 +390,7 @@ body{
     letter-spacing: 0.02em;
     color: var(--black-color);
 }
-.text-person {
+.team-text-person {
     font-size: 16px;
     line-height: calc(24/16);
     text-align: center;
@@ -367,7 +399,7 @@ body{
     margin-top: 8px;
 }
 
-.team-list-icons{
+.team-list-link-icons{
     list-style: none;
     display: flex;
     justify-content: center;
@@ -392,13 +424,12 @@ body{
 
 
 
-/* -----------------------------Customers----------------------------- */
 
+/*-------------------------------------------- Customers -----------------------------------------------------*/
 
 .customers-section{
     padding-top: 96px;
     padding-bottom: 96px;
-    display: flex;
 }
 
 .customers-title{
@@ -413,30 +444,26 @@ body{
 }
 .customers-list{
     list-style: none;
-    display: block;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 16px;
     flex-wrap: wrap;
-    width: calc(100% - 2 * 16px ) / 2;
+    justify-content: center;
+    gap: 16px;
 }
 
 
 .customers-link{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 168px;
-    height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
 .customers-icon{
     fill: #8E8F99;
-    width: 104px;
-    height: 56px;
+    width: 168px;
+    height: 88px;
+    padding: 16px 32px;
     transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
@@ -451,22 +478,19 @@ body{
 
 
 
-/* ---------------------------------Footer------------------------------------------------ */
+/*-------------------------------------------- Footer -----------------------------------------------------*/
 
-.background-footer{
-    padding-top: 96px;
-    padding-bottom: 96px;
+.footer-background{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--black-color);
 }
-.position{
-    display: block;
-    text-align: center;
-}
-.footer-social{
-    margin-top: 72px;
-}
-
 
 .footer-logo{
+    text-align: center;
+}
+
+.footer-web{
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 800;
@@ -477,7 +501,7 @@ body{
     text-transform: uppercase;
     color: var(--blue-color);
 }
-.footer-logo-studio-2 {
+.footer-studio-2 {
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -489,6 +513,7 @@ body{
 
 }
 .footer-text {
+    font-weight: 400;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
@@ -496,26 +521,29 @@ body{
     width: 264px;
     margin-top: 16px;
     text-align: start;
-    margin-right: auto;
-    margin-left: auto;
 }
-.title-social-media{
-    font-weight: 500;
+
+.footer-social{
+    margin-top: 72px;
+    text-align: center;
+}
+
+.footer-social-title{
+    font-weight: 600;
     font-size: 16px;
     line-height: calc(24/16);
     letter-spacing: 0.02em;
     color: var(--brand-white-color);
+    margin-bottom: 16px;
 }
 
 .footer-list-icons{
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 16px;
+    gap: 24px;
 }
-.footer-link{
-    background: rgba(255, 255, 255, 0.1);
+.footer-social-link{
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -524,24 +552,19 @@ body{
     height: 40px;
     transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
-.footer-link:hover,
-.footer-link:focus{
+.footer-social-link:hover,
+.footer-social-link:focus{
     background: #31D0AA;
 }
 
-.background-footer{
-    background-color: var(--black-color);
-}
 
-/* -------------------------------------Subscribe section in the footer--------------------------------------------- */
+/*-------------------------------------------- Subscribe in the footer -----------------------------------------------------*/
 
-
-.form-wraper{
+.footer-form-wraper{
+    display: block;
+    text-align: center;
     margin-top: 72px;
 }
-
-/* .subscribe-section{
-} */
 
 .subscribe-text{
     font-weight: 500;
@@ -552,36 +575,48 @@ body{
     margin-bottom: 16px;
 }
 
-.footer-input-E-mail{
+.footer-input{
     width: 100%;
     height: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    padding-left: 16px;
+    padding-right: 16px;
     border-radius: 4px;
-    outline: transparent;
-    background-color: var(--black-color);
-    font-style: normal;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #E7E9FC;
+    transition: border var(--transition-duration) var(--transition-timing-function);
+    background-color: transparent;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24/12);
     letter-spacing: 0.02em;
-    color: #E7E9FC;
-    padding-left: 16px;
-    padding-right: 16px;
+}
+
+.footer-input:hover,
+.footer-input:focus,
+.footer-input:active
+{
+    border: 1px solid var(--dark-blue-color);
 }
 
 .subscribe-button{
+    display: inline-flex;
     margin-top: 16px;
+    min-width: 165px;
+    height: 40px;
+    align-items: center;
+    padding: 8px 24px;
     background: var(--blue-color);
+    border: none;
     border-radius: 4px;
-    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 500;
     font-size: 16px;
     line-height: calc(24 / 16);
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    border-color: transparent;
-    width: 165px;
-    padding: 8px 24px;
+    cursor: pointer;
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+    gap: 16px;
 }
 .subscribe-button:hover,
 .subscribe-button:focus{
@@ -590,25 +625,17 @@ body{
 
 .subcribe-icon-send{
     fill: currentColor;
+    display: inline-block;
+    margin-left: 16px;
+    width: 24px;
+    height: 20px;
 }
 
 
 
 
+/*-------------------------------------------- Portfolio Buttons -----------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* --------------------------------------------------Portfolio-------------------------------------- */
 
 
 .section-buttons{
@@ -650,6 +677,7 @@ body{
     margin-left: 24px;
 }
 
+/*-------------------------------------------- Portfolio Images -----------------------------------------------------*/
 
 .section-portfolio{
     padding-top: 96px;
@@ -767,7 +795,7 @@ body{
 }
 
 
-
+/*-------------------------------------------- Modal -----------------------------------------------------*/
 
 .backdrop{
     position: fixed;
@@ -835,6 +863,7 @@ body{
     color: #FFFFFF;
 }
 
+/*-------------------------------------------- Modal Form -----------------------------------------------------*/
 
 .modal-title{
     font-weight: 500;
@@ -927,6 +956,8 @@ body{
     margin-bottom: 16px;
 }
 
+/*-------------------------------------------- Modal Privacy -----------------------------------------------------*/
+
 .modal-label-privacy{
     margin-top: 16px;
     margin-bottom: 20px;
@@ -976,7 +1007,7 @@ body{
 }
 
 
-
+/*-------------------------------------------- Modal Button -----------------------------------------------------*/
 
 .modal-button-send{
     display: flex;
@@ -1005,6 +1036,13 @@ body{
 .modal-button-send:focus{
     background: var(--dark-blue-color);
 }
+
+
+
+
+
+
+
 
 
 
