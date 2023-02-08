@@ -20,37 +20,100 @@
 <body>
     <!-----------------------------------------Header  ------------------------------------------------>
     <header class="header">
-    <div class="container-header header-list">
-            <a class="header-web" href="">WEB<span class="header-studio">STUDIO</span>
-            </a>
-    <!-----------------------------------------List Studio------------------------------------------------>        
-            <nav>
-                <ul class="list-studio">
-                    <li class="item">
-                        <a href="./index.html" class="studio-title current">Studio</a>
+    <div class="container-header">
+           
+            <div class="header-block">
+                <nav>
+                    <a class="header-web" href="./index.html">WEB<span class="header-studio">STUDIO</span>
+                    </a>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link current">Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./portfolio.html" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contacts.html" class="nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <button data-menu-open type="button" class="mobile-menu-open">
+                    <svg class="mobile-menu-open-icon" width="32" height="22">
+                        <use href=".images/icons.svg#hamburger"></use>
+                    </svg>
+                </button>
+
+                <ul class="contacts-list">
+                    <li class="contacts-item"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+                    <li class="contacts-item"><a href="tel:+110001111111" class="contacts-link">+11 (000) 111-11-11</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <!-------------------------------------------------------Mobile Menu  ------------------------------------------------>
+    <div class="mobile-menu is-hidden" data-menu>
+        <div class="container-mobile-menu">
+            <button data-menu-close type="button" class="mobile-menu-close">
+                <svg class="mobile-menu-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#cross"></use>
+                </svg>
+            </button>
+            <div>
+                <ul class="nav-list-mobile-menu">
+                    <li class="nav-item"><a href="./index.html" class="nav-link-mobile-menu current-mobile-menu">Studio</a></li>
+                    <li class="nav-item"><a href="./portfolio.html" class="nav-link-mobile-menu">Portfolio</a></li>
+                    <li class="nav-item"><a href="./contacts.html" class="nav-link-mobile-menu">Contacts</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="contacts-list-mobile-menu">
+                    <li class="contacts-item-mobile-menu"><a href="tel:+11(000)111-11-11" class="contacts-link-mobile-menu phone-mobile-menu">+11(000)111-11-11</a></li>
+                    <li class="contacts-item-mobile-menu"><a href="mailto:info@devstudio.com" class="contacts-link-mobile-menu email-mobile-menu">info@devstudio.com</a></li>
+                </ul>
+                <ul class="social-list-mobile-menu">
+                    <li>
+                        <a href="//instagram.com" target="_blank" link="noopener norefferer noflollow" class="social-link-mobile-menu">
+                            <svg width="24" height="24">
+                                <use xlink:href="./images/icons.svg#mobile-menu-instagram"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="item">
-                        <a href="./portfolio.html" class="studio-title">Portfolio</a>
+                    <li>
+                        <a href="//twitter.com" target="_blank" link="noopener norefferer noflollow" class="social-link-mobile-menu">
+                            <svg width="24" height="24">
+                                <use xlink:href="./images/icons.svg#mobile-menu-twitter"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="item">
-                        <a href="" class="studio-title">Contacts</a>
+                    <li>
+                        <a href="//facebook.com" target="_blank" link="noopener norefferer noflollow" class="social-link-mobile-menu">
+                            <svg width="24" height="24">
+                                <use xlink:href="./images/icons.svg#mobile-menu-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//linkedin.com" target="_blank" link="noopener norefferer noflollow" class="social-link-mobile-menu">
+                            <svg width="24" height="24">
+                                <use xlink:href="./images/icons.svg#mobile-menu-linkedin"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </nav>
-    <!-----------------------------------------List Contacts------------------------------------------------>    
-            <ul class="list-contacts">
-                <li class="item"><a href="mailto:info@devstudio.com" class="contacts-title">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+110001111111" class="contacts-title">+11 (000) 111-11-11</a></li>
-            </ul>
+            </div>
+        </div>
     </div>
+
     </header>
-    <main>
     <!-----------------------------------------Background Solutions------------------------------------------------>       
-            <section class="background">
+    <main>
+    <section class="solutions">
                     <div class="container">
-                            <h1 class="title-solutions">Effective Solutions<br>
+                            <h1 class="solutions-title">Effective Solutions<br>
                             For Your Business</h1>
-                            <button type="button" class="button-order-service" data-modal-open>Order Service</button>
+                            <button type="button" class="solutions-button" data-modal-open>Order Service</button>
                     </div>
             </section>
     <!-----------------------------------------Skills------------------------------------------------>       
@@ -345,37 +408,38 @@
     <footer class="footer-background">
         <div class="container-footer">
             <div class="footer-logo">
-                <a class="footer-web" href="">WEB<span class="footer-studio-2">STUDIO</span>
+                <a class="footer-web" href="">WEB<span class="footer-studio">STUDIO</span>
                 </a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
             </div>
+            
             <div class="footer-social">
                 <p class="footer-social-title">Social media</p>
-                <ul class="footer-list-icons">
-                    <li class="footer-item">
+                <ul class="footer-social-list-icons">
+                    <li class="footer-social-item">
                         <a class="footer-social-link" href="">
-                            <svg class="footer-icon" width="24" height="24">
+                            <svg class="footer-social-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-instagram-footer"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-item">
+                    <li class="footer-social-item">
                         <a class="footer-social-link" href="">
-                            <svg class="footer-icon" width="24" height="24">
+                            <svg class="footer-social-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-twitter-footer"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-item">
+                    <li class="footer-social-item">
                         <a class="footer-social-link" href="">
-                            <svg class="footer-icon" width="24" height="24">
+                            <svg class="footer-social-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-facebook-footer"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-item">
+                    <li class="footer-social-item">
                         <a class="footer-social-link" href="">
-                            <svg class="footer-icon" width="24" height="24">
+                            <svg class="footer-social-icon" width="24" height="24">
                                 <use href="./images/icons.svg#icon-in-footer"></use>
                             </svg>
                         </a>
@@ -456,7 +520,12 @@
             </form>
         </div>
     </div>
-    <script src="./modal.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 </html>

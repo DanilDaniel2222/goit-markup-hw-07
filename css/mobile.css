@@ -1,0 +1,36 @@
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .container-header{
+        max-width: 428px;
+    }
+    .container{
+        max-width: 428px;
+    }
+    .container-footer{
+        max-width: 428px;
+    }
+    .solutions{
+        max-width: 428px;
+    }
+    .header{
+        max-width: 428px;
+    }
+    .container-menu{
+        max-width: 428px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .portfolio-buttons-list{
+        flex-wrap: wrap;
+    }
+    .portfolio-buttons-item:nth-child(-n+3){
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 428px){
+    .social-list-mobile-menu{
+        gap: initial;
+        justify-content: space-between;
+    }
+}
