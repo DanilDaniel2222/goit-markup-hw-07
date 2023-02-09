@@ -18,21 +18,20 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <!------------------------------------ Header ----------------------------->
+    <!-----------------------------------------Header  ------------------------------------------------>
     <header class="header">
         <div class="container-header">
                
                 <div class="header-block">
-                    
                     <nav>
                         <a class="header-web" href="./index.html">WEB<span class="header-studio">STUDIO</span>
                         </a>
                         <ul class="nav-list">
                             <li class="nav-item">
-                                <a href="./index.html" class="nav-link">Studio</a>
+                                <a href="./index.html" class="nav-link current">Studio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./portfolio.html" class="nav-link current">Portfolio</a>
+                                <a href="./portfolio.html" class="nav-link">Portfolio</a>
                             </li>
                             <li class="nav-item">
                                 <a href="./contacts.html" class="nav-link">Contacts</a>
@@ -40,9 +39,9 @@
                         </ul>
                     </nav>
         
-                    <button data-menu-open type="button" class="menu-open">
-                        <svg class="menu-open-icon" width="32" height="22">
-                            <use href=".images/icons.svg#hamburger"></use>
+                    <button data-menu-open type="button" class="mobile-menu-open">
+                        <svg class="mobile-menu-open-icon" width="32" height="22">
+                            <use href="./images/icons.svg#hamburger"></use>
                         </svg>
                     </button>
     
@@ -50,9 +49,63 @@
                         <li class="contacts-item"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
                         <li class="contacts-item"><a href="tel:+110001111111" class="contacts-link">+11 (000) 111-11-11</a></li>
                     </ul>
-                
                 </div>
         </div>
+    
+        <!-------------------------------------------------------Mobile Menu  ------------------------------------------------>
+        <div class="mobile-menu is-hidden" data-menu>
+            <div class="container-mobile-menu">
+                <button data-menu-close type="button" class="mobile-menu-close">
+                    <svg class="mobile-menu-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#cross"></use>
+                    </svg>
+                </button>
+                <div>
+                    <ul class="nav-list-mobile-menu">
+                        <li class="nav-item-mobile-menu"><a href="./index.html" class="nav-link-mobile-menu current-mobile-menu">Studio</a></li>
+                        <li class="nav-item-mobile-menu"><a href="./portfolio.html" class="nav-link-mobile-menu">Portfolio</a></li>
+                        <li class="nav-item-mobile-menu"><a href="./contacts.html" class="nav-link-mobile-menu">Contacts</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="contacts-list-mobile-menu">
+                        <li class="contacts-item-mobile-menu"><a href="tel:+11(000)111-11-11" class="contacts-link-mobile-menu phone-mobile-menu">+11 (000) 111-11-11</a></li>
+                        <li class="contacts-item-mobile-menu"><a href="mailto:info@devstudio.com" class="contacts-link-mobile-menu email-mobile-menu">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="social-list-mobile-menu">
+                        <li>
+                            <a href="//instagram.com" target="_blank" link="noopener norefferer noflollow" class="social-link-mobile-menu">
+                                <svg width="24" height="24">
+                                    <use xlink:href="./images/icons.svg#icon-instagram-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="//twitter.com" target="_blank" link="noopener norefferer noflollow" class="social-link-mobile-menu">
+                                <svg width="24" height="24">
+                                    <use xlink:href="./images/icons.svg#icon-twitter-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="//facebook.com" target="_blank" link="noopener norefferer noflollow" class="social-link-mobile-menu">
+                                <svg width="24" height="24">
+                                    <use xlink:href="./images/icons.svg#icon-facebook-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="//linkedin.com" target="_blank" link="noopener norefferer noflollow" class="social-link-mobile-menu">
+                                <svg width="24" height="24">
+                                    <use xlink:href="./images/icons.svg#icon-linkedin-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
         </header>
     <!------------------------------------ Section Portfolio -------------------------------->    
     <main>
@@ -256,5 +309,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

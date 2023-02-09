@@ -205,10 +205,14 @@ nav{
     border: none;
     padding: 0;
     margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mobile-menu-open-icon{
-    fill: #000000;
+    stroke: #000000;
 }
 
 .mobile-menu-close{
@@ -230,7 +234,7 @@ nav{
     transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.mobile-menu .is-hidden{
+.mobile-menu.is-hidden{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -249,6 +253,7 @@ nav{
     transition: translate var(--transition-duration) var(--transition-timing-function);
     z-index: 1;
     width: 100vw;
+    opacity: 1;
 }
 
 .container-mobile-menu{
