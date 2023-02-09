@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
     
-    <svg id="hamburger" width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <svg id="hamburger" width="32" height="22" viewBox="0 0 32 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
     <svg xmlns="http://www.w3.org/2000/svg" id="icon-facebook-team" width="16" height="16" fill="none" viewBox="0 0 16 16">
@@ -39,7 +39,7 @@
       </defs>
     </svg>
     
-    <svg xmlns="http://www.w3.org/2000/svg" id="icon-in-team" width="16" height="16" fill="none" viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" id="icon-linkedin-team" width="16" height="16" fill="none" viewBox="0 0 16 16">
       <g fill="#F4F4FD" clip-path="url(#clip0_318744_1345)">
         <path d="M15.996 16H16v-5.87c0-2.87-.618-5.082-3.974-5.082-1.613 0-2.696.886-3.138 1.725h-.047V5.317H5.66V16h3.314v-5.29c0-1.392.264-2.738 1.988-2.738 1.7 0 1.725 1.589 1.725 2.828V16h3.31ZM.264 5.318h3.317V16H.264V5.318ZM1.921 0C.861 0 0 .86 0 1.92s.86 1.94 1.921 1.94 1.922-.88 1.922-1.94A1.924 1.924 0 0 0 1.92 0Z"/>
       </g>
@@ -73,7 +73,7 @@
       </defs>
     </svg>
     
-    <svg xmlns="http://www.w3.org/2000/svg" id="icon-in-footer" width="24" height="24" fill="none" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" id="icon-linkedin-footer" width="24" height="24" fill="none" viewBox="0 0 24 24">
       <g fill="#F4F4FD" clip-path="url(#clip0_318744_1447)">
         <path d="M23.994 24H24v-8.803c0-4.306-.927-7.623-5.96-7.623-2.421 0-4.045 1.328-4.708 2.587h-.07V7.976H8.489V24h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.55 0 2.587 2.384 2.587 4.243V24h4.965ZM.396 7.977h4.976V24H.396V7.977ZM2.882 0A2.883 2.883 0 0 0 0 2.882c0 1.591 1.291 2.909 2.882 2.909 1.591 0 2.882-1.318 2.882-2.909A2.884 2.884 0 0 0 2.882 0Z"/>
       </g>
