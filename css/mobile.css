@@ -1,3 +1,4 @@
+/* ------------------------------Basic----------------------------- */
 @media screen and (min-width: 480px) and (max-width: 767px){
     .container-header{
         max-width: 428px;
@@ -18,7 +19,7 @@
         max-width: 428px;
     }
 }
-
+/* ------------------------------Portfolio----------------------------- */
 @media screen and (max-width: 767px){
     .portfolio-buttons-list{
         flex-wrap: wrap;
@@ -27,7 +28,7 @@
         margin-bottom: 16px;
     }
 }
-
+/* ------------------------------Mobile Menu----------------------------- */
 @media screen and (max-width: 428px){
     .social-list-mobile-menu{
         gap: initial;
