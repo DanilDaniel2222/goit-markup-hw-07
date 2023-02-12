@@ -1,3 +1,15 @@
+:root{
+    --text-color: #434455;
+    --title-text-color: #2E2F42;
+    --active-color: #4D5AE5;
+    --second-active-color: #404BBF;
+    --standard-white-color: #FFFFFF;
+    --first-white-color: #F4F4FD;
+    --second-white-color: #E7E9FC;
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ------------------------------Basic----------------------------- */
 @media screen and (min-width: 480px) and (max-width: 767px){
     .container-header{
@@ -15,7 +27,7 @@
     .header{
         max-width: 428px;
     }
-    .container-menu{
+    .container-mobile-menu{
         max-width: 428px;
     }
 }

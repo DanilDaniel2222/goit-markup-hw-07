@@ -1,3 +1,15 @@
+:root{
+    --text-color: #434455;
+    --title-text-color: #2E2F42;
+    --active-color: #4D5AE5;
+    --second-active-color: #404BBF;
+    --standard-white-color: #FFFFFF;
+    --first-white-color: #F4F4FD;
+    --second-white-color: #E7E9FC;
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ------------------------------Basic----------------------------- */
 @media screen and (min-width: 768px) and (max-width: 1199px){
     .container{
@@ -36,8 +48,8 @@
     }
     .contacts-list{
         position: absolute;
-        top: 0px;
         right: 16px;
+        top: 0;
     }
     .contacts-list li:not(:last-child){
         margin-right: 0;
@@ -60,7 +72,7 @@
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-            url(./images/solutions-tab.jpg);
+            url(../images/solutions-tab.jpg);
         padding-bottom: 108px;
     }
     @media (min-device-pixel-ratio: 2),
@@ -70,7 +82,7 @@
             background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-                url(./images/solutions-tab-2x.jpg);
+                url(../images/solutions-tab-2x.jpg);
         }
     }
 
@@ -128,18 +140,19 @@
         row-gap: 72px;
     }
 /* ------------------------------Footer----------------------------- */
-    .footer-content{
+    
+    .footer-logo-content{
         margin-left: 108px;
     }
     .footer-web{
-        text-align: initial;
+        justify-content: initial;
     }
-    .footer-socials{
+    .footer-social{
         margin: 0;
         margin-left: 24px;
     }
     .footer-form-content{
-        text-align: center;
+        text-align: initial;
         margin-left: 108px;
     }
     .subscribe-input-button{

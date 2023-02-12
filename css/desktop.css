@@ -1,0 +1,253 @@
+:root{
+    --text-color: #434455;
+    --title-text-color: #2E2F42;
+    --active-color: #4D5AE5;
+    --second-active-color: #404BBF;
+    --standard-white-color: #FFFFFF;
+    --first-white-color: #F4F4FD;
+    --second-white-color: #E7E9FC;
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* -----------------------------------Basic-------------------------------------- */
+@media screen and (min-width: 1200px){
+    .container-header{
+        width: 1158px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container{
+        width: 1158px;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .container-footer{
+        width: 1158px;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        display: flex;
+    }
+
+
+/* -----------------------------------Header Basic-------------------------------------- */
+
+    .header{
+        padding-bottom: 25px;
+    }
+    .header-block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+    }
+    .header-web, .nav-list, .contacts-list{
+        display: initial;
+    }
+
+/* -----------------------------------Header Nav-List-------------------------------------- */
+    .nav-list{
+        margin-left: 77px;
+    }
+    .nav-list li:not(:last-child){
+        margin-right: 40px;
+    }
+    .nav-item{
+        list-style: none;
+        display: inline-block;
+    }
+    .nav-link{
+        font-weight: 500;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+/* -----------------------------------Header Contacts-------------------------------------- */
+    .contacts-list{
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+    }
+    .contacts-list li:not(:last-child){
+        margin-right: 40px;
+    }
+    .contacts-item{
+        list-style: none;
+    }
+    .contacts-link{
+        font-size: 16px;
+    }
+
+/* -----------------------------------Header Mobile Menu-------------------------------------- */ 
+
+    .mobile-menu-open{
+        display: none;
+    }
+    .mobile-menu{
+        display: none;
+    }
+
+/* -----------------------------------Solutions-------------------------------------- */
+
+    .solutions{
+        padding-bottom: 188px;
+        padding-top: 188px;
+        max-width: 1600px;
+        max-height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/solutions-desktop.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .banner{
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url(../images/solutions-desktop-2x.jpg);
+        }
+    }
+
+    .solutions-title{
+        font-size: 56px;
+        margin-bottom: 48px;
+    }
+    .solutions-button{
+        font-weight: 600;
+        line-height: 1.18;
+    }
+
+/* -----------------------------------Modal-------------------------------------- */
+    .modal{
+        width: 408px;
+        min-height: 584px;
+    }
+
+/* -----------------------------------Skills-------------------------------------- */
+
+    .skills-section{
+        padding-top: 120px;
+    }
+    .skills-list{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: initial;
+    }
+    .skills-list li:not(:last-child){
+        margin-right: 24px;
+    }
+    .skills-list li:not(:first-child){
+        margin-top: 0;
+    }
+    .skills-item{
+        list-style: none;
+        width: 264px;
+    }
+    .skills-background-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        background-color: var(--first-white-color);
+    }
+    .skills-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .skills-text{
+        font-weight: 400;
+        letter-spacing: 0.01em;
+    }
+
+/* -----------------------------------Doing------------------------------------- */
+    .doing-section{
+        display: flex;
+    }
+
+/* -----------------------------------Team------------------------------------- */    
+    .team-section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .team-list{
+        display: flex;
+        justify-content: initial;
+        flex-wrap: nowrap;
+        list-style: none;
+        margin: 0;
+        padding-bottom: 0;
+    }
+    .team-list .team-item{
+        margin: 0;
+    }
+    .team-list .team-item:not(:first-child){
+        margin-left: 24px;
+    }
+
+/* -----------------------------------Customers------------------------------------- */
+    .customers-list{
+        gap: 24px;
+        flex-wrap: initial;
+        justify-content: initial;
+    }
+
+
+/* -----------------------------------Footer------------------------------------- */
+    .container-footer{
+        flex-wrap: initial;
+    }
+    .footer-web{
+        justify-content: initial;
+    }
+
+    .footer-social{
+        text-align: initial;
+        margin-top: 0;
+        margin-left: 120px;
+        margin-right: 80px;
+    }
+    .footer-form-content{
+        margin: 0;
+        text-align: initial;
+    }
+    .footer-input-button{
+        display: flex;
+        width: 453px;
+        gap: 24px;
+    }
+    .footer-input{
+        width: 264px;
+    }
+    .footer-button{
+        margin-top: 0;
+    }
+
+/* -----------------------------------Portfolio Buttons------------------------------------- */    
+    .portfolio-buttons-list{
+        justify-content: center;
+        margin-bottom: 72px;
+    }
+
+/* -----------------------------------Portfolio Images------------------------------------- */    
+    .portfolio-list{
+        display: flex;
+        gap: 24px;
+    }
+    .portfolio-list .portfolio-item:nth-last-child(-n+6){
+        margin-top: 24px;
+    }
+}
+
+
