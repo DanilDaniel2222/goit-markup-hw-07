@@ -225,7 +225,7 @@ nav{
 }
 
 .mobile-menu-close{
-    /* position: fixed; */
+    position: fixed;
     position: absolute;
     width: 24px;
     height: 24px;
@@ -272,7 +272,9 @@ nav{
 .container-mobile-menu{
     width: 100vw;
     height: 100vh;
-    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -320,6 +322,7 @@ nav{
     color: var(--active-color);
     text-decoration: none;
     letter-spacing: 0.07em;
+
 }
 .email-mobile-menu{
     font-weight: 500;
@@ -333,11 +336,11 @@ nav{
 /*-------------------------------------------- Mobile Menu Social -----------------------------------------------------*/
 .social-list-mobile-menu{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    justify-content: space-between;
     list-style: none;
-    gap: 56px;
-    min-width: 300px;
+    gap: 40px;
+
 }
 .social-link-mobile-menu{
     background-color: var(--active-color);
@@ -353,7 +356,8 @@ nav{
 /*-------------------------------------------- Background Solutions -----------------------------------------------------*/
 
 .solutions{
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--title-text-color);
     text-align: center;
     padding-top: 112px;
@@ -363,6 +367,7 @@ nav{
         rgba(46, 47, 66, 0.7)), 
         url('../images/solutions-mobile.jpg');
     max-width: 1440px;
+    min-width: 100px;
     max-height: 432px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -400,7 +405,6 @@ nav{
     color: var(--standard-white-color);
     cursor: pointer;
     background-color: var(--active-color);
-    padding: 16px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid transparent;
@@ -536,9 +540,10 @@ nav{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 128px;
-    margin: 0;
     justify-content: center;
+    padding-bottom: 128px;
+    min-width: 280px;
+    margin: 0;
 }
 
 .team-image{
@@ -749,6 +754,8 @@ nav{
     display: block;
     text-align: center;
     margin-top: 72px;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 .subscribe-title{
@@ -773,7 +780,7 @@ nav{
     background-color: transparent;
     font-weight: 400;
     font-size: 12px;
-    line-height: calc(24/12);
+    line-height: calc(24 / 12);
     letter-spacing: 0.04em;
 }
 
@@ -836,7 +843,9 @@ nav{
 .portfolio-buttons-list{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 66px;
+    width: 100%;
 }
 
 .portfolio-buttons-item:not(:last-child){
@@ -904,7 +913,7 @@ nav{
 .portfolio-item{
     list-style: none;
     flex-basis: 360px;
-    min-width: 320px;
+    min-width: 300px;
 }
 
 .portfolio-link{
@@ -955,7 +964,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 360px;
+    min-width: 300px;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;

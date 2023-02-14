@@ -33,12 +33,17 @@
 }
 
 /* ------------------------------Mobile Menu----------------------------- */
-@media screen and (max-width: 428px){
+@media screen and (min-width: 428px){
     .social-list-mobile-menu{
         gap: 56px;
         justify-content: space-between;
-        margin-right: 40px;
     }
+}
+
+@media screen and (min-width: 480px){
+.footer-input {
+    width: 396px;
+}
 }
 
 /* ------------------------------Portfolio----------------------------- */
