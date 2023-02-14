@@ -11,7 +11,7 @@
 }
 
 /* ------------------------------Basic----------------------------- */
-@media screen and (min-width: 480px) and (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 767px){
     .container-header{
         max-width: 428px;
     }
@@ -22,15 +22,25 @@
         max-width: 428px;
     }
     .solutions{
-        max-width: 428px;
+        max-width: 768px;
     }
     .header{
-        max-width: 428px;
+        width: 100%;
     }
     .container-mobile-menu{
         max-width: 428px;
     }
 }
+
+/* ------------------------------Mobile Menu----------------------------- */
+@media screen and (max-width: 428px){
+    .social-list-mobile-menu{
+        gap: 56px;
+        justify-content: space-between;
+        margin-right: 40px;
+    }
+}
+
 /* ------------------------------Portfolio----------------------------- */
 @media screen and (max-width: 767px){
     .portfolio-buttons-list{
@@ -38,12 +48,5 @@
     }
     .portfolio-buttons-item:nth-child(-n+3){
         margin-bottom: 16px;
-    }
-}
-/* ------------------------------Mobile Menu----------------------------- */
-@media screen and (max-width: 428px){
-    .social-list-mobile-menu{
-        gap: initial;
-        justify-content: space-between;
     }
 }
