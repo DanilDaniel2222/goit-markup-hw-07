@@ -171,6 +171,9 @@
         margin-bottom: 64px;
         justify-content: center;
     }
+    .portfolio-buttons-link{
+        padding: 12px 24px;
+    }
 /* ------------------------------Portfolio Images----------------------------- */
     .portfolio-list{
         justify-content: initial;

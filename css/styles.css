@@ -366,7 +366,6 @@ nav{
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)), 
         url('../images/solutions-mobile.jpg');
-    max-width: 1440px;
     min-width: 100px;
     max-height: 432px;
     background-size: cover;
@@ -843,9 +842,9 @@ nav{
 .portfolio-buttons-list{
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: start;
     margin-bottom: 66px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .portfolio-buttons-item:not(:last-child){
@@ -863,7 +862,7 @@ nav{
     color: var(--active-color);
     cursor: pointer;
     background-color: var(--first-white-color);
-    padding: 12px 24px;
+    padding: 8px 15px;
     border: 1px solid var(--second-white-color);
     border-radius: 4px;
     transition: color var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function), border-color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
@@ -1158,6 +1157,7 @@ nav{
 .modal-label-privacy{
     margin-top: 16px;
     margin-bottom: 20px;
+
 }
 
 .visually-hidden{
@@ -1181,13 +1181,13 @@ nav{
 }
 
 .modal-privacy-text{
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: calc(16 / 12);
     letter-spacing: 0.04em;
     color: #757575;
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
 }
 .modal-privacy-text::before{
@@ -1201,6 +1201,7 @@ nav{
 .modal-privacy-link{
     color: var(--active-color);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 

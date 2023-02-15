@@ -46,6 +46,14 @@
 }
 }
 
+/* ------------------------------Modal----------------------------- */
+@media screen and(min-width: 428px){
+    .modal-privacy-text{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
 /* ------------------------------Portfolio----------------------------- */
 @media screen and (max-width: 767px){
     .portfolio-buttons-list{
